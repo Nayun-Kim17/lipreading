@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>입모양 사전</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel=" shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+</head>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+
+  (function(d) {
+    var config = {
+      kitId: 'dcq2ofx',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+	<meta charset="utf-8"> 
+	<style type="text/css">
+			@font-face {
+    font-family: 'TTTogether';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff');  
+}
+    font-weight: normal;
+    font-style: normal;
+}
+*{}
+
+		body{
+				background-color:white;
+				height: 100vh;
+				width: 100%;
+				
+				margin:0;
+				padding: 0;
+				
+				align-items: center;
+				
+
+				font-family:noto-sans-cjk-kr, sans-serif;
+				
+				}
+        nav{margin:0;justify-content:space-between;top:0;
+left: 0; margin-left:0; margin-right: -25%;z-index: 500;}
+        nav h1{width: 11vw;}
+		.funstory > h2{text-align: left; width:46vw;padding-bottom: 5%; font-weight: 700; font-size: 18px; margin: auto;}
+    h1{margin-left: 1%;  font-family: 'TTTogether'; font-size: 2vw;}
+		h3{color:#212a9b; font-weight:400; font-size: 5vh;text-align: center;  font-family: 'TTTogether'; }
+    h2{font-size:3vh;}
+		p{font-size:1.5vh; margin-top: 0;}
+
+		footer{height:  40vh; margin-top: 100vh;}
+    #investigation{padding-top: 10vh;}
+    #investigation h2 {text-align: center;font-weight: 400; color:#212a9b;font-family: 'TTTogether';}
+    #investigation p {text-align: center;font-weight: 400; }
+    #investigation video {padding-top: 10vh;}
+		.togglebutton p {font-size: 1em;}
+		.flex{position: relative;
+			display: flex;
+			justify-content: space-between;
+			width:13vw;
+			top:3vh;
+			right:-82vw;
+			padding: auto;
+      height: 10vh;
+      z-index: 550;
+			}
+		.flexx{display: flex;}
+    .relative{position: relative;}
+    .fixed{position: fixed; width: auto; height:10vh; }
+    .top{width: 100%; height: 10vh; background-color: white;}
+    .fixed img{width:auto; height: 10vh;}
+    .fixed div{padding-right:2.5vw; padding-left: 2.5vw;}
+    .fixed a{padding-right:2.5vw; padding-left: 2.5vw;}
+		.alien{
+				 width: 50px;
+				 height: 50px;
+				 top:50%;
+				 left:50%;
+				 z-index: 100;
+				 position: absolute;
+				 border-radius:50%;
+				 background-image: url(./mouse_alien-09.svg);
+				 background-position: center;
+				 background-repeat: no-repeat;
+				 pointer-events: none;
+				 box-sizing: border-box;
+				 transition:0.2s;
+				}
+		.toggle{
+			position:relative;
+			display: block;
+			width: 3vw;
+			height:2vh;
+			
+			background-color:#8a4ced;
+			border-radius: 15px;
+			
+			z-index: 10;
+
+		}
+		.toggle:after{
+			content:'';
+			position: absolute;
+			width:2vh;
+			height: 2vh;
+			border-radius: 30px;
+			background-color:#f9f8ca;
+			top:0.1px;
+			left:0.1px;
+			transiton:all 0.5s;
+		}
+  		.checkbox:checked + .toggle::after {
+        left : calc(3vw - 2vh); 
+        }
+        .checkbox:checked + .toggle {
+        background-color:#74d1af;
+    	}
+    	.checkbox { 
+        display : none;}
+        .togglebutton {width:11vw; z-index: 0;}
+        .checkbox:checked + .lipread {background-color: white; color:#383838;}
+        .sticky{position: sticky; top:0;}
+        .absolute{position: absolute;}
+        .note{top:90vh; left: 0;}
+
+       #top a {text-decoration: none; list-style: none; color:black; display: block;}
+        .top p{ font-family: 'TTTogether';}
+        .top img{height: 100%; width: auto;}
+        .items > div:hover {background-color:#8a4ced; }
+        .items > a:hover {background-color:#8a4ced; }
+        .lipread{background-color: #8a4ced; height: 70vh;}
+        .lipread div {width:50vw; margin: auto; padding-top: 18vh;}
+        .lipread h1 {font-family:noto-sans-cjk-kr, sans-serif; font-weight:700; font-size:5.5vh; color:white;}
+        .lipread p{font-family:noto-sans-cjk-kr, sans-serif; font-weight:700; font-size:5.5vh; color:white;}
+        .description{font-family:noto-sans-cjk-kr, sans-serif;  width:40%; margin: auto; }
+        .small {font-weight: 400; font-size: 0.7vw;}
+        .description p {font-weight: 400; font-size: 1.2vw; word-spacing: -0.1vw; line-height: 170%; word-break: keep-all;}
+        
+        .description h2{font-weight: 600; font-size:2.2vw;}
+        .description div{margin-top:30vh; margin-bottom: 40vh;}
+
+        .funstory{ padding-top: 6vh; padding-bottom:10vh;  width: auto; margin: auto; background-image: url(./background.png)}
+        .half {width: 50%;}
+      .swiper-slide {
+        text-align: left;
+        background-color:white;
+
+      	padding-top: 2%;
+      	padding-bottom: 2%;
+        border:solid 3px; 
+         border-radius:30px; 
+         background: rgb(255,255,255);
+			background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 95%, rgba(33,42,155,1) 95%, rgba(33,42,155,1) 100%, rgba(33,42,155,1) 100%);
+      top:5vh; left:25vw;
+        /* Center slide text vertically */
+        
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+         width: auto;
+        height: 50%;
+        max-height:50%;
+        max-width: 100%;
+        overflow-x: hidden;
+        object-fit: cover;
+        margin: auto;
+        margin-bottom: 3vh;
+      }
+      .swiper-slide p {font-size: 1.8vh; width: 60%; margin: auto; line-height: 3.2vh; text-align: left; word-break: keep-all;}
+      .menu > h2{color:#212a9b; font-family: 'TTTogether'; font-weight: 400;}
+      .menu{width:20vw; height:80vh; padding-top:10%; padding-bottom: :15%;text-align: left; display: flex; flex-direction: column; word-break: keep-all; margin:2%;}
+      .content{width:50vw; height:80vh; overflow-y: auto;}
+      .left {text-align: right;}
+
+      .swiper-slide div {padding-left: 5%; padding-right: 5%;}
+
+      .level{position: fixed; top:45%; left:78vw; z-index: 100; width: auto;}
+      .level h2{font-family:noto-sans-cjk-kr, sans-serif; font-weight: 700; font-size: 20px;}
+      .level img{width: 10%; padding-left: 1vw;}
+      .green{color:#74d1af;}
+      .yellow{color:#f9f8ca;}
+      .navy{color:#212a9b;}
+
+
+
+
+      ul{list-style:none;justify-content: center;}
+      .tabmenu{ 
+      max-width:100%; 
+      margin: 0 auto; 
+      position:relative;
+      padding-bottom: 100vh; 
+
+    }
+    .tabmenu ul li{
+      display:  inline-block;
+      width:20%; 
+      
+      text-align:center; 
+      
+    }
+    .tabmenu ul li a{
+      display:block;
+      line-height:5vh;
+      height:5vh;
+      text-decoration:none; 
+      font-family:noto-sans-cjk-kr, sans-serif; 
+      font-weight: 600; 
+      font-size:3vh;
+      color:#212a9b;
+      
+
+    }
+    .tabCon{
+      display:none; 
+      text-align:left; 
+      padding: 1%;
+      position:absolute; 
+      left:0; top:7vh; 
+      box-sizing: border-box; 
+      border : 1px solid white;
+
+      width:100%; height: auto;
+      background-color: #74d1af;
+    }
+    .btnCon:target  {
+      border-bottom: 5px solid #212a9b;
+    }
+    .btnCon:target .tabCon{
+      display: block;
+    }
+    .upper{width:100vw; height: 60vh; z-index: 20; background-color: white;}
+    .letterbtn{width: 25vw; height: 20vh;  background-color:#74d1af;}
+    .letterbtn:hover{background-color: white;}
+    .letterbtn h2{font-size: 6vw; }
+    .letterbtn img{display: block; width:44%; margin:auto;}
+    .empty{width: 25vw; height: 20vh;  background-color:white;}
+      
+	</style>
+    }
+    }
+    }
+    }
+<body>
+	<div class="alien"></div> 
+
+  <nav class="top fixed" id="top">
+    <div class=" fixed flexx items">
+    <div class="flexx" style="width:20vw;">
+    <img src="logo.png">
+    <h1>입모양사전</h1>
+    </div>
+     <a href="#info"><div><h2>말읽기 정보</h2></div></a>
+     <a href="#funfact"><div><h2>재밌는 이야기</h2></div></a>
+    <a href="#investigation"><div><h2>수사하기</h2></div></a>
+    </div>
+  </nav>
+
+
+	<div class=" top flexx">
+    
+    
+		<div class="flex">
+    <p>말읽기모드</p>
+    <input type="checkbox" id="switch" class="checkbox"  />
+    <label for="switch" class="toggle"> 
+    </label>
+    <p>수화모드</p>
+  </div>
+	</div>
+	
+	<section class="lipread" id="info" >
+		<div>
+		<h1>말읽기 (Lip reading)</h1>
+		<p><span class="green">입의 모양</span>과 <span class="yellow">표정</span>으로 상대가 무슨 말을 하고 있는지 알아맞히는 기술</p>
+	</div>
+</section>
+  <section class="description"style="position: relative;">
+    <img src="https://media.giphy.com/media/l46CDLNzo7uaJp7l6/giphy.gif" width="360" height="auto" frameBorder="0" class="giphy-embed" allowFullScreen class="absolute" style="left:-30vw; top:50vh; position:absolute;">
+    <div>
+    <div class="flexx small " style="justify-content: space-between; margin-top: 5vh; margin-bottom: 0;">
+    <p><span class="small">말읽기</span></p>
+    <p><span class="small">비슷한 뜻:음성언어, 구화법</span></p>
+    </div>
+    
+      <h2>1. 말읽기는 이렇게 시작되었어요.</h2>
+      <p>18세기 후반 독일의 하이니케(Samuel Heinicke)에 의해 최초로 실시되었습니다. 이후에 독일 농교육을 이끈 프리드리히 모리츠 힐(Friedrich Moritz Hill)에 의해 더욱 발전하여 여러 나라에서 실시하게 되었습니다.<br>
+      20세기 중반 알렉산더 그래함 벨(Alexander Graham Bell)이 전자공학을 이용하여 보청기를 발명했는데, 이것은 구화법을 폭발적으로 사용하게 하는 계기가 되었습니다.<br><br>
+      1980년대 들어와 인공와우로 인해 중증의 청각 장애 유아와 아동들도 구화법을 배우는 대상이 되었어요.</p>
+    </div>
+    <div>
+      <h2>2. 말읽기가 사용되는 곳은...</h2>
+      <p>현대에는 법정, 스포츠 등에서도 폭넓게 사용되고 있으며, 청각장애인의 의사소통을 돕는 주요 수단 중 하나입니다.</p>
+      <p>수화보다 널리 사용되고 있으며 청인(소리를 듣는 사람)과 의사소통하기 위한 수단이기도 해요.</p>
+    </div>
+
+    <div>
+      <h2>3. 어떻게 배우나요?</h2>
+      
+      <p>입술 모양이나 표정을 읽는 시각적 훈련 (독화, 혹은 말읽기)과 인공와우와 같은 기기를 이용하여 남아있는 청력을 통해 청각적인 단서를 이용하는 청능훈련으로 이루어져 있어요.</p>
+      <p>언어치료나 학교와 같은 기관의 지도가 도움이 되기도 하고, 어리거나 경도의 청각장애인 경우에는 가정에서의 교육이 효과적입니다.</p> 
+      <p>효과적으로 학습하기 위해서는 보조 기구와 기술을 일찍이 적용하고, 적절한 청각 학습환경을 조성해야 하며, 부모 참여가 필요한 등의 노력이 필요합니다.<br>
+      또한 아동에게는 의미가 있는 완전한 구와 문장을 제공해야 합니다.</p>
+    </div>
+    <div>
+      <h2>4.입모양 사전을 활용해요.</h2>
+      <p>입모양 사전은 말읽기 학습을 위한 시각적인 훈련을 돕는 보조 매체로, 가장 시작 단계인 조음을 학습하기 적절합니다.</p>
+      <p>뿐만 아니라,청인들을 대상으로 청각 장애인에 대한 이해를 높이기 위한 장으로 활용하기 위해 만들었어요.</p>
+    </div>
+
+
+
+
+  </section>
+	
+	<div class="funstory flexx relative " style="justify-content: space-between;" id="funfact">
+    <div class="menu left">
+        
+        <h2 onclick="novel()">명탐정 드루리 레인 </h2>
+        <h2 onclick="ai()">사람보다 뛰어난 말읽기 전문가</h2>
+        <h2 onclick="national()">2018 제1차 남북정상회담</h2>
+        <h2 onclick="novel()">명탐정 드루리 레인 </h2>
+        <h2 onclick="ai()">사람보다 뛰어난 말읽기 전문가</h2>
+        <h2 onclick="national()">2018 제1차 남북정상회담</h2>
+      </div>
+		
+        <div class="swiper-slide absolute content" id="novel">
+        	<h3>명탐정 드루리 레인</h3>
+       
+        	<img src="./x_trag.jpg" >
+	
+        	<p> 드루리 레인은 1932년, 엘러리 퀸의 미스터리 소설에 등장한 주인공이에요.</p>
+        	<p>명배우였던 드루리 레인은 소리를 하나도 들을 수 없지만 말읽기를 배워서 살고 있었어요.</p>
+        	<p>행복한 노후를 지내던 그는 '크래머 사건'을 신문 기사만으로 해결하는 멋진 추리력을 보여주었답니다.</p>
+        
+        </div>
+        <div class="swiper-slide absolute content" id="ai">
+          <h3>사람보다 뛰어난 말읽기 전문가</h3>
+        
+
+          <img src="./AI.gif">
+        
+          <p> 구글의 딥마인드가 여러 방송 동영상을 가지고 약 5000시간동안 딥러닝을 한 결과, 말읽기를 하는 데에 성공했어요.</p>
+          <p>인공지능은 입술의 움직임을 읽어서 200개의 비디오 테스트 중에 50%를 읽었어요.</p>
+          <p>반면에 법정에서 일하는 말읽기 전문가는 25%만 알아들을 수 있었대요.</p>
+          <p>얼마 안 가 인공지능 말읽기 통역사가 생길지도 모르겠네요.</p>
+       
+        </div>
+       <div class="swiper-slide absolute content" id="baseball">
+          <h3>야구 선수들은 왜 입을 가릴까?</h3>
+         
+          <img src="./baseball.jpg" >
+      
+          <p>야구 경기를 볼 때 선수들이 글러브로 입을 가리고 말하는 걸 본 적이 있나요?</p>
+          <p>상대 팀에서 말읽기를 할 줄 아는 사람이 작전을 알아챌 가능성이 있기 때문이에요.</p>
+          <p>그래서 입모양이 보이지 않게 가리고 말하는 거랍니다.</p>
+        </div>
+        <div class="swiper-slide absolute content" id="racist">
+          <h3>인종차별 했어, 안 했어?</h3>
+          <img src="./soccer.jpg">
+          
+          <p>2020년 9월 14일, 축구 경기 중에 곤살레스 선수가 네이마르 선수의 머리를 때렸어요.</p>
+          <p>곤살레스 선수는 '네이마르가 나에게 원숭이라고 했다'고 인종 차별을 당했기 때문에 때렸다고 말했어요.</p>
+          <p>정말인지 확인하기 위해 그 순간이 담긴 중계 카메라 영상을 말읽기 전문가에게 가져가 판단해 달라고 했어요.</p>
+          <p>결국 인종차별적 발언을 했다는 구체적인 증거를 확보하지 못하여 무혐의로 결론이 났습니다.</p>
+       
+          </div>
+          <div class="swiper-slide absolute content" id="national">
+          <h3>2018 제1차 남북정상회담</h3>
+          
+          <img src="./national.jpg">
+       
+        
+          <p>27일 남북 정상회담에서 문재인 대통령과 김정은 북한 국무위원장은 단둘이서 도보다리에서 대화했어요.</p>
+          <p>바람 소리, 나뭇잎이 스치는 소리만 들려서 대화 내용을 자세히 알지 못했던 사람들은 내용을 궁금해했답니다.</p>
+          <p>기자들은 한국구화학교에 전화해서 물어보았어요.</p>
+          <p>하지만 입술 모양만으로는 대화 내용 전부를 알 수는 없어요.</p>
+          <p>어느 정도 상황을 이해하고 있거나, 짧고 단순한 지시어 정도는 파악할 수 있습니다.</p>
+        </div>
+
+
+
+        <div class="swiper-slide absolute content" id="movie">
+          <h3>고전 영화의 재탄생</h3>
+          <img src="./movie.jpg">
+      
+          <p>김기영 감독은 '기생충'의 봉준호 감독과 많은 배우들이 존경하는 영화 감독이에요.</p>
+          <p>김재한 감독의 상남영화제작소는 한국영화 100년을 맞은 올해 김기영 감독의 <주검의 상자> 음성을 최대한 원래 형태로 되살려 보기로 했어요.</p>
+          <p>원작 시나리오가 없었기 때문에 말읽기 기술의 도움을 받았습니다.</p>
+          <p>물론 말읽기만으로 모든 부분을 알아들을 수는 없었어요.</p>
+          <p>부족한 부분은 시나리오 작가가 연결해 메웠습니다.</p>
+          
+        </div>
+        <div class="menu">
+        
+        <h2 onclick="movie()">고전 영화의 재탄생</h2>
+        <h2 onclick="baseball()">야구 선수들은 왜 입을 가릴까?</h2>
+        <h2 onclick="racist()">인종차별 했어, 안 했어?</h2>
+         <h2 onclick="movie()">고전 영화의 재탄생</h2>
+        <h2 onclick="baseball()">야구 선수들은 왜 입을 가릴까?</h2>
+        <h2 onclick="racist()">인종차별 했어, 안 했어?</h2>
+      </div>
+        </div>
+    
+    
+    </div>
+
+  <section style="height: auto;" id="investigation">
+	<h2>1단계</h2>
+  <h2>말읽기 익히기</h2>
+  <p>숨을 곳을 미리 말하고 숨는댔으니까... 뭐라고 하는지 말을 알아들을 수 있어야 해.</p>
+
+  <div class="upper sticky" id="mouthmove" >
+    <video class="mouthmove" src="./mouthmove.mp4" loop preload="" type="video/mp4" style="width:100%;"></video>
+  </div>
+  <div class="tabmenu">
+  <ul class="flexx">
+    <li id="tab1" class="btnCon"><a class="btn first" href="#tab1">모음</a>
+      <div class="tabCon" >
+        <div class="flexx">
+          <div class="letterbtn" onmouseover="playPause('mouthmove')" onmouseout="playPause('mouthmove')"><h3>ㄱ</h3></div>
+          <div class="letterbtn"><h3>ㅋ</h3></div>
+          <div class="letterbtn"><h3>ㄲ</h3></div>
+       
+          
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㄴ</h3></div>
+          <div class="letterbtn"><h3>ㄷ</h3></div>
+          <div class="letterbtn"><h3>ㅌ</h3></div>
+          <div class="letterbtn"><h3>ㄸ</h3></div>
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㄹ</h3></div>
+          <div class="letterbtn"><h3>ㅁ</h3></div>
+          <div class="letterbtn"><h3>ㅂ</h3></div>
+          <div class="letterbtn"><h3>ㅃ</h3></div>
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㅅ</h3></div>
+          <div class="letterbtn"><h3>ㅈ</h3></div>
+          <div class="letterbtn"><h3>ㅊ</h3></div>
+          <div class="letterbtn"><h3>ㅉ</h3></div>
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㅍ</h3></div>
+          
+          <div class="letterbtn"><h3>ㅇ</h3></div>
+          <div class="letterbtn"><h3>ㅎ</h3></div>
+        </div>
+
+
+      </div>
+      </li>
+    <li id="tab2" class="btnCon"><a class="btn" href="#tab2">자음</a>
+     
+        <div class="tabCon" >
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㅏ</h3></div>
+          <div class="letterbtn"><h3>ㅑ</h3></div>
+          <div class="letterbtn"><h3>ㅓ</h3></div>
+          <div class="letterbtn"><h3>ㅕ</h3></div>
+          
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㅗ</h3></div>
+          <div class="letterbtn"><h3>ㅛ</h3></div>
+          <div class="letterbtn"><h3>ㅜ</h3></div>
+          <div class="letterbtn"><h3>ㅠ</h3></div>
+          
+        </div>
+        <div class="flexx">
+          <div class="letterbtn"><h3>ㅡ</h3></div>
+          <div class="letterbtn"><h3>ㅣ</h3></div>
+          
+          
+        </div>
+      </div>
+      </li>    
+    
+      
+    
+  </ul>
+</div>
+</section>
+
+
+	<footer>
+    <div class="flexx" >
+      <div style="width:50%; padding:5%;">
+      <p>이 사이트는 가상의 이야기로, 어린이 청각장애인의 언어 활동과 비장애인의 청각장애인 이해를 원활하게 돕기 위해 제작되었습니다.</p>
+      <p>이 사이트는 프로토타입이며, 학습을 위해 사용되기에는 부족합니다.</p>
+      <p>Contact</p>
+      <p>pibicheese@gmail.com</p>
+      <p>010-9884-3271</p>
+      </div>
+      <div style="width:50%; padding:5%;">
+        <p>Resorces</p>
+        <a href="https://terms.naver.com/entry.naver?docId=525061&cid=46615&categoryId=46615">
+          <p>네이버 지식백과-구화</p>
+        </a>
+        <a href="https://www.nocutnews.co.kr/news/4963024">
+          <p>재미있는 사실-1</p>
+        </a>
+        <a href="http://www.idomin.com/news/articleView.html?idxno=711417">
+          <p>재미있는 사실-2</p>
+        </a>
+    </div>
+    <div class="flexx" >
+    </div>
+		
+	</footer>
+	
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).mousemove(function(e){
+  		 $('.alien').css({left:e.pageX, top:e.pageY});
+  	})
+
+ 
+  </script>
+
+
+ <script>
+      
+var cip = $(".mousemove").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('mouthmove', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('mouthmove', this).get(0).pause(); 
+}
+
+
+
+
+  document.getElementById("novel").style.zIndex = 1;
+
+      function novel() {
+  document.getElementById('novel').style.zIndex = 1;
+  document.getElementById('ai').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = -1;
+  document.getElementById('baseball').style.zIndex = -1;
+  document.getElementById('racist').style.zIndex = -1;
+  document.getElementById('movie').style.zIndex = -1;
+
+}
+
+function ai() {
+  document.getElementById('ai').style.zIndex = 1;
+  document.getElementById('novel').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = -1;
+  document.getElementById('baseball').style.zIndex = -1;
+  document.getElementById('racist').style.zIndex = -1;
+  document.getElementById('movie').style.zIndex = -1;
+}
+
+function national() {
+  document.getElementById('ai').style.zIndex = -1;
+  document.getElementById('novel').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = 1;
+  document.getElementById('baseball').style.zIndex = -1;
+  document.getElementById('racist').style.zIndex = -1;
+  document.getElementById('movie').style.zIndex = -1;
+}
+function baseball() {
+  document.getElementById('ai').style.zIndex = -1;
+  document.getElementById('novel').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = -1;
+  document.getElementById('baseball').style.zIndex = 1;
+  document.getElementById('racist').style.zIndex = -1;
+  document.getElementById('movie').style.zIndex = -1;
+}
+function racist() {
+  document.getElementById('ai').style.zIndex = -1;
+  document.getElementById('novel').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = -1;
+  document.getElementById('baseball').style.zIndex = -1;
+  document.getElementById('racist').style.zIndex = 1;
+  document.getElementById('movie').style.zIndex = -1;
+}
+function movie() {
+  document.getElementById('ai').style.zIndex = -1;
+  document.getElementById('novel').style.zIndex = -1;
+  document.getElementById('national').style.zIndex = -1;
+  document.getElementById('baseball').style.zIndex = -1;
+  document.getElementById('racist').style.zIndex = -1;
+  document.getElementById('movie').style.zIndex = 1;
+}
+    </script>
+
+
+</body>
+</html>
